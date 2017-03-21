@@ -1,4 +1,21 @@
 <?php
+/*APlicacion 1
+//siempre dentro del tag php
+//Primer Ejercicio
+// $nombre = "Juan"; // signo $ siempre antes de una variable
+// echo $nombre."<br>"; // salto de linea
+// echo "Hola Mundo".$nombre;
+// Aplicacion Nº1
+$numero = 1;
+$res = 0;
+$contador = 0;
+while ($res <= 1000) {
+    $res = $res + $numero;
+    $numero = $numero + 1;
+    $contador = $contador + 1;
+}
+echo "Resultado: ".$res."<br>Se Sumo ".$contador." veces.";
+*/
 //para mostrar array usar var_dump
 $promedio = 0;
 $lista = array();
@@ -11,7 +28,7 @@ for ($i=0; $i <5; $i++) {
 for ($i=0; $i <5; $i++) { 
     array_push($lista,rand(1,10)); // Manera 3
 }
-
+print_r($lista);
 var_dump($lista);
 for ($i=0; $i < 5; $i++) { 
     $promedio += $lista[$i];
